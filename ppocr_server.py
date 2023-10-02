@@ -1,5 +1,6 @@
 from paddleocr import PaddleOCR
 from flask import Flask
+from flask import request
 from base64 import b64decode
 
 
