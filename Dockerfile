@@ -4,4 +4,4 @@ RUN pip install gunicorn -i https://mirrors.aliyun.com/pypi/simple/
 COPY ./ppocr_server.py /home/PaddleOCR/
 
 
-CMD gunicorn -w 2 "ppocr_server:app"
+CMD gunicorn -w 2 -b 0.0.0.0 "ppocr_server:app"
